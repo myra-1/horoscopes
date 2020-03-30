@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-class DailyHoroscope extends Component {
+class HoroscopeDaily extends Component {
   constructor() {
     super()
 
@@ -30,4 +30,4 @@ class DailyHoroscope extends Component {
   }
 }
 
-export default DailyHoroscope
+export default HoroscopeDaily

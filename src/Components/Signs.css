@@ -1,0 +1,13 @@
+.zodiacTitle {
+  opacity: 0;
+}
+
+.zodiacImg:hover {
+  opacity: 0.2;
+  transition: opacity 0.5s;
+}
+
+.zodiacImg:hover ~ .zodiacTitle {
+  opacity: 1;
+  transition: opacity 0.5s;
+}

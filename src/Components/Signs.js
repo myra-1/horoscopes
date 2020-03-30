@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import signInfo from '/Users/myra/supernovas/unit-2/project/project2/src/data/horoscope2.json'
+import Sign from './Sign'
+import './Signs.css'
 
 class Signs extends Component {
   constructor() {
@@ -15,10 +17,7 @@ class Signs extends Component {
 
       <div>
         {this.state.signInfo.map((sign) =>
-          <div>
-            <img src={sign.image} />
-            <h4>{sign.title}</h4>
-          </div>
+          <Sign sign={sign} />
         )}
       </div >
     )

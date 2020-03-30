@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import DailyHoroscope from './Components/DailyHoroscope'
+import HoroscopeDaily from './Components/HoroscopeDaily'
 import signInfo from './data/horoscope2'
-import WeeklyHoroscope from './Components/WeeklyHoroscope'
+import HoroscopeWeekly from './Components/HoroscopeWeekly'
 import Signs from './Components/Signs'
+import Sign from './Components/Sign'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 
@@ -14,8 +15,8 @@ const App = () => {
       <Header />
       <main>
         <Signs />
-        {/* <DailyHoroscope />
-        <WeeklyHoroscope /> */}
+        {/* <HoroscopeDaily />
+        <HoroscopeWeekly /> */}
       </main>
       <Footer />
     </>
