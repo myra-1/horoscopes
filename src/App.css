@@ -1,3 +1,31 @@
-html {
+/* html {
   text-align: center;
+} */
+
+header {
+  border-bottom: 1px dotted lightgray;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* header nav {
+  display: flex;
+  align-self: center;
+  padding-right: 100px;
+} */
+
+main {
+  padding: 30px;
+  margin: 10px;
+  min-height: 500px;
+}
+
+footer {
+  border-top: 1px dotted lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: purple;
 }

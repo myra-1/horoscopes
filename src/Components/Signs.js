@@ -15,7 +15,7 @@ class Signs extends Component {
   render() {
     return (
 
-      <div>
+      <div className='zodiacMap'>
         {this.state.signInfo.map((sign) =>
           <Sign sign={sign} />
         )}

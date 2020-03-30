@@ -4,10 +4,10 @@ const Header = () => {
 
   return (
     <header>
-      <h1>Horoscope Central</h1>
       <nav>
-        <h3>Home</h3>
+        {/* <h3>Home</h3> */}
       </nav>
+      <h1>Horoscope Central</h1>
     </header>
   )
 }
