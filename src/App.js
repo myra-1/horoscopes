@@ -1,41 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
-import axios from 'axios'
+import DailyHoroscope from './Components/DailyHoroscope'
+import signInfo from './data/horoscope2'
+import WeeklyHoroscope from './Components/WeeklyHoroscope'
+import Signs from './Components/Signs'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
 
-class App extends Component {
-  constructor() {
-    super()
+const App = () => {
 
-    this.state = {
-      today: ''
-    }
-  }
-
-
-  componentDidMount = async () => {
-    const response = await axios.post('https://aztro.sameerkumar.website/?sign=capricorn&day=today')
-    console.log(response)
-
-    this.setState({
-      today: response.data.description
-    })
-
-
-  }
-
-
-  render() {
-    return (
-      <div>
-        <h1>TEST TEST TEST</h1>
-        <br />
-        <h1>{this.state.today}</h1>
-      </div >
-    )
-  }
+  return (
+    <>
+      <Header />
+      <main>
+        <Signs />
+        {/* <DailyHoroscope />
+        <WeeklyHoroscope /> */}
+      </main>
+      <Footer />
+    </>
+  )
 }
 
 export default App;
 
 
 // https://github.com/sameerkumar18/aztro
+
+//horsoscope2 json cred:
+// BEAUTIFUL DATA BROUGHT TO YOU BY:
+// http://newsmobile.in/json-horoscope/
