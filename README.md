@@ -14,8 +14,8 @@ Mobile & Tablet:
 
 Component Heirarchy
 - Home (App)
-- Horoscope page
-- Daily Horoscope
+- Horoscope page (class)
+- Daily Horoscope (functional)
   - Today Daily
   - Yesterday Daily
   - Tomorrow Daily
@@ -39,3 +39,6 @@ Strengths:
 
 Inconvenience:
 - As far as I can tell, the API requires the specific parameters, so the home page cannot populate based on the API, only the individual pages, so I will need to add value to the items on homepage to associate them to the API when clicked.
+
+Opportunity:
+- Because of the above, I can create my own dataset to map through on the home page
