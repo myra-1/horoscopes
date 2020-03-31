@@ -13,7 +13,7 @@ class SunFacts extends Component {
   componentDidMount = async () => {
     const signId = this.props.match.params.signId
 
-    const response = await axios.post('https://aztro.sameerkumar.website/?sign=capricorn&day=today')
+    const response = await axios.post(`https://aztro.sameerkumar.website/?sign=${signId}&day=today`)
     console.log(response)
     console.log(signId)
 
