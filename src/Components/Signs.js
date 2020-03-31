@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import signInfo from '/Users/myra/supernovas/unit-2/project/project2/src/data/horoscope2.json'
 import Sign from './Sign'
 import './Signs.css'
+import { Route, Link } from 'react-router-dom'
 
 class Signs extends Component {
   constructor() {
@@ -17,7 +18,9 @@ class Signs extends Component {
 
       <div className='zodiacMap'>
         {this.state.signInfo.map((sign) =>
-          <Sign sign={sign} />
+          <Link to='/horoscope'>
+            <Sign sign={sign} />
+          </Link>
         )}
       </div >
     )
@@ -25,6 +28,7 @@ class Signs extends Component {
 }
 
 export default Signs
+
 
 
 //horsoscope2 json cred:

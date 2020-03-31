@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom'
+
 import './App.css';
-import HoroscopeDaily from './Components/HoroscopeDaily'
 import signInfo from './data/horoscope2'
-import HoroscopeWeekly from './Components/HoroscopeWeekly'
-import Signs from './Components/Signs'
-import Sign from './Components/Sign'
+
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+
+import Horoscope from './Components/Horoscope'
+import Signs from './Components/Signs'
+import Sign from './Components/Sign'
 
 const App = () => {
 
@@ -14,9 +17,8 @@ const App = () => {
     <>
       <Header />
       <main>
-        <Signs />
-        {/* <HoroscopeDaily />
-        <HoroscopeWeekly /> */}
+        <Route exact path='/' component={Signs} />
+        <Route exact path='/horoscope' component={Horoscope} />
       </main>
       <Footer />
     </>
