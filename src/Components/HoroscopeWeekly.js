@@ -12,7 +12,9 @@ class HoroscopeWeekly extends Component {
 
 
   componentDidMount = async () => {
-    const response = await axios('https://cors-anywhere.herokuapp.com/http://horoscope-api.herokuapp.com/horoscope/week/libra')
+    const signType = this.props.match.params.signType
+
+    const response = await axios(`https://cors-anywhere.herokuapp.com/http://horoscope-api.herokuapp.com/horoscope/week/${signType}`)
     console.log(response)
 
     this.setState({

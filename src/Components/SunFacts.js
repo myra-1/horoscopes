@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-class HoroscopeDaily extends Component {
-  constructor() {
-    super()
+class SunFacts extends Component {
+  constructor(props) {
+    super(props)
 
     this.state = {
       today: ''
@@ -11,8 +11,11 @@ class HoroscopeDaily extends Component {
   }
 
   componentDidMount = async () => {
+    const signId = this.props.match.params.signId
+
     const response = await axios.post('https://aztro.sameerkumar.website/?sign=capricorn&day=today')
     console.log(response)
+    console.log(signId)
 
     this.setState({
       today: response.data.description
@@ -30,4 +33,4 @@ class HoroscopeDaily extends Component {
   }
 }
 
-export default HoroscopeDaily
+export default SunFacts
