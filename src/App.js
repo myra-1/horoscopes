@@ -10,7 +10,7 @@ import Footer from './Components/Footer'
 import Horoscope from './Components/Horoscope'
 import Signs from './Components/Signs'
 import Sign from './Components/Sign'
-import SunFacts from './Components/SunFacts'
+import ThreeDayScope from './Components/ThreeDayScope'
 
 class App extends Component {
   constructor() {
@@ -28,7 +28,7 @@ class App extends Component {
         <main>
           <Route exact path='/' component={Signs} />
           <Route exact path='/horoscope' component={Horoscope} />
-          <Route path={'/horoscope/:signId'} component={SunFacts} />
+          <Route path={'/horoscope/:signId'} component={ThreeDayScope} />
         </main>
         <Footer />
       </>
