@@ -29,8 +29,6 @@ class App extends Component {
           <Route exact path='/' component={Signs} />
           <Route exact path='/horoscope' component={Horoscope} />
           <Route path={'/horoscope/:signId'} component={SunFacts} />
-          {/* <SunFacts /> */}
-          {/* <Route path='/horoscope/' render={routerProps => <Horoscope signInfo={signInfo} {...routerProps} />} /> */}
         </main>
         <Footer />
       </>
@@ -41,29 +39,10 @@ class App extends Component {
 export default App;
 
 
-{/* <Route path='/horoscope/:signType'
-render={(routerProps) =>
-  <Horoscope signInfo={this.state.signInfo} {...routerProps} />} /> */}
-
-
-
-
-
-/// THOUGHTS
-// - need to set up horoscope route / link to be specific to the image clicked
-
-// - need to match the title: 
-//     from the json file => to the path => to the API on the horoscope page
-
-
-
-
-
-
 
 
 // https://github.com/sameerkumar18/aztro
 
 //horsoscope2 json cred:
 // BEAUTIFUL DATA BROUGHT TO YOU BY:
-// http://newsmobile.in/json-horoscope/
+// http://newsmobile.in/json-horoscope/  

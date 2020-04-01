@@ -6,11 +6,26 @@ class SunFacts extends Component {
     super(props)
 
     this.state = {
-      today: '',
+      description: '',
+      compatibility: '',
+      mood: '',
+      color: '',
+      luckyNumber: '',
+      luckyTime: '',
       sign: '',
       day: 'today'
     }
-    // this.clickTmrw = this.clickTmrw.bind(this)
+  }
+
+  clickYesterday() {
+    this.setState({ 'day': 'yesterday' }, this.componentDidMount)
+    console.log('hello')
+    console.log(this.state.day)
+  }
+  clickToday() {
+    this.setState({ 'day': 'today' }, this.componentDidMount)
+    console.log('hello')
+    console.log(this.state.day)
   }
 
   clickTmrw() {
@@ -18,7 +33,6 @@ class SunFacts extends Component {
     console.log('hello')
     console.log(this.state.day)
   }
-
 
   componentDidMount = async () => {
     const signId = this.props.match.params.signId
@@ -29,8 +43,13 @@ class SunFacts extends Component {
     console.log(this.state.day)
 
     this.setState({
-      today: response.data.description,
-      sign: signId
+      description: response.data.description,
+      sign: signId,
+      compatibility: response.data.compatibility,
+      mood: response.data.mood,
+      color: response.data.color,
+      luckyNumber: response.data['lucky_number'],
+      luckyTime: response.data['lucky_time']
     }
     )
   }
@@ -39,8 +58,9 @@ class SunFacts extends Component {
     return (
       <div>
         <h1>{this.state.sign}</h1>
-        <p>{this.state.today}</p>
-        {/* <button onClick={() => this.setState({ day: 'tomorrow' })}>tomorrow</button> */}
+        <p>{this.state.description}</p>
+        <button onClick={() => this.clickYesterday()}>Yesterday</button>
+        <button onClick={() => this.clickToday()}>Today</button>
         <button onClick={() => this.clickTmrw()}>Tomorrow</button>
       </div >
 

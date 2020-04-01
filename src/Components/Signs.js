@@ -33,26 +33,6 @@ class Signs extends Component {
 export default Signs
 
 
-// <Route path='/horoscope/' render={routerProps => <Horoscope signInfo={signInfo} {...routerProps} />} />
-{/* <Route path='/horoscope/:signType'
-render={(routerProps) =>
-  <Horoscope sign={sign} {...routerProps} />} /> */}
-
-
-// render() {
-//   return (
-
-//     <div className='zodiacMap'>
-//       {this.state.signInfo.map((sign) =>
-//         <Link to='/horoscope/:signType'>
-//           <Sign sign={sign} />
-//         </Link>
-//       )}
-//     </div >
-//   )
-// }
-// }
-
 //horsoscope2 json cred:
 // BEAUTIFUL DATA BROUGHT TO YOU BY:
 // http://newsmobile.in/json-horoscope/
