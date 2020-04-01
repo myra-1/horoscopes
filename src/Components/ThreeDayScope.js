@@ -63,7 +63,7 @@ class ThreeDayScope extends Component {
         <button onClick={() => this.clickYesterday()}>Yesterday</button>
         <button onClick={() => this.clickToday()}>Today</button>
         <button onClick={() => this.clickTmrw()}>Tomorrow</button>
-        <SunFacts />
+        <SunFacts {...this.state} />
       </div >
 
 
