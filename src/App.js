@@ -4,13 +4,12 @@ import { Route, Link } from 'react-router-dom'
 import './App.css';
 import signInfo from '/Users/myra/supernovas/unit-2/project/project2/src/data/horoscope2.json'
 
-import Header from './Components/Header'
-import Footer from './Components/Footer'
+import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
 
-import Horoscope from './Components/Horoscope'
-import Signs from './Components/Signs'
-import Sign from './Components/Sign'
-import ThreeDayScope from './Components/ThreeDayScope'
+import Signs from './Components/Zodiac/Signs'
+import Sign from './Components/Zodiac/Sign'
+import ThreeDayScope from './Components/ThreeDayScope/ThreeDayScope'
 
 class App extends Component {
   constructor() {
@@ -27,7 +26,6 @@ class App extends Component {
         <Header />
         <main>
           <Route exact path='/' component={Signs} />
-          <Route exact path='/horoscope' component={Horoscope} />
           <Route path={'/horoscope/:signId'} component={ThreeDayScope} />
         </main>
         <Footer />

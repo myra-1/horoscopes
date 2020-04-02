@@ -19,7 +19,7 @@ class Signs extends Component {
       <div className='zodiacMap'>
         {this.state.signInfo.map((sign, id) =>
           <div key={id}>
-            <Link to={`/horoscope/${sign.title}`}>
+            <Link style={{ color: 'orange' }} to={`/horoscope/${sign.title}`}>
               <Sign sign={sign} />
             </Link>
           </div>

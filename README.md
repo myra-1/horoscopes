@@ -14,11 +14,10 @@ Mobile & Tablet:
 
 Component Heirarchy
 - Home (App)
-- Horoscope page (class)
-- Daily Horoscope (functional)
-  - Today Daily
-  - Yesterday Daily
-  - Tomorrow Daily
+- Signs (Class, maps through json data)
+  - Sign (individual sign images and titles)
+- Daily Horoscope (class w/ API call)
+  - Sun Facts (functional)
 - Loading page (in case of API slowness)
 
 MVP: The minimum, need-to-have features

@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import SunFacts from './SunFacts'
+import SunFacts from '../SunFacts/SunFacts'
+import { Link } from 'react-router-dom'
 
 class ThreeDayScope extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
+      dateRange: '',
+      currentDate: '',
       description: '',
       compatibility: '',
       mood: '',
@@ -20,30 +23,23 @@ class ThreeDayScope extends Component {
 
   clickYesterday() {
     this.setState({ 'day': 'yesterday' }, this.componentDidMount)
-    console.log('hello')
-    console.log(this.state.day)
   }
   clickToday() {
     this.setState({ 'day': 'today' }, this.componentDidMount)
-    console.log('hello')
-    console.log(this.state.day)
   }
 
   clickTmrw() {
     this.setState({ 'day': 'tomorrow' }, this.componentDidMount)
-    console.log('hello')
-    console.log(this.state.day)
   }
 
   componentDidMount = async () => {
     const signId = this.props.match.params.signId
 
     const response = await axios.post(`https://aztro.sameerkumar.website/?sign=${signId}&day=${this.state.day}`)
-    console.log(response)
-    console.log(signId)
-    console.log(this.state.day)
 
     this.setState({
+      dateRange: response.data['date_range'],
+      currentDate: response.data['current_date'],
       description: response.data.description,
       sign: signId,
       compatibility: response.data.compatibility,
@@ -57,13 +53,21 @@ class ThreeDayScope extends Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.state.sign}</h1>
-        <p>{this.state.description}</p>
-        <button onClick={() => this.clickYesterday()}>Yesterday</button>
-        <button onClick={() => this.clickToday()}>Today</button>
-        <button onClick={() => this.clickTmrw()}>Tomorrow</button>
+      <div className="scopeAndFacts">
         <SunFacts {...this.state} />
+        <div className='threeScopes'>
+          <h1>{this.state.sign}</h1>
+          <h4>{this.state.dateRange}</h4>
+          <h5>Horoscope for {this.state.currentDate}</h5>
+          <p>{this.state.description}</p>
+          <button onClick={() => this.clickYesterday()}>Yesterday</button>
+          <button onClick={() => this.clickToday()}>Today</button>
+          <button onClick={() => this.clickTmrw()}>Tomorrow</button>
+          <br />
+          <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
+            <h3>Home</h3>
+          </Link>
+        </div>
       </div >
 
 

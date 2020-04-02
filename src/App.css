@@ -1,25 +1,23 @@
-/* html {
-  text-align: center;
-} */
-
 header {
   border-bottom: 1px dotted lightgray;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  font-family: 'Acme', sans-serif;
 }
 
-/* header nav {
+header nav {
   display: flex;
   align-self: center;
   padding-right: 100px;
-} */
+}
 
 main {
   padding: 30px;
   margin: 10px;
   min-height: 500px;
+  font-family: 'Acme', sans-serif;
 }
 
 footer {
@@ -29,3 +27,9 @@ footer {
   justify-content: center;
   color: purple;
 }
+
+/* .scopeAndFacts {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 30px;
+} */

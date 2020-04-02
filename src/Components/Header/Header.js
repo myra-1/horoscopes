@@ -5,10 +5,10 @@ const Header = () => {
 
   return (
     <header>
-      <nav>
-        {/* <h3>Home</h3> */}
-      </nav>
-      <Link to='/'><h1>Horoscope Central</h1></Link>
+      {/* <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
+        <h3>Home</h3>
+      </Link> */}
+      <h1>Horoscope Central</h1>
     </header>
   )
 }
