@@ -17,19 +17,19 @@ class ThreeDayScope extends Component {
       luckyNumber: '',
       luckyTime: '',
       sign: '',
-      day: 'today'
+      day: 'Today'
     }
   }
 
   clickYesterday() {
-    this.setState({ 'day': 'yesterday' }, this.componentDidMount)
+    this.setState({ 'day': 'Yesterday' }, this.componentDidMount)
   }
   clickToday() {
-    this.setState({ 'day': 'today' }, this.componentDidMount)
+    this.setState({ 'day': 'Today' }, this.componentDidMount)
   }
 
   clickTmrw() {
-    this.setState({ 'day': 'tomorrow' }, this.componentDidMount)
+    this.setState({ 'day': 'Tomorrow' }, this.componentDidMount)
   }
 
   componentDidMount = async () => {
@@ -54,20 +54,20 @@ class ThreeDayScope extends Component {
   render() {
     return (
       <div className="scopeAndFacts">
+        <h1>{this.state.sign}</h1>
+        <h4>({this.state.dateRange})</h4>
         <SunFacts {...this.state} />
         <div className='threeScopes'>
-          <h1>{this.state.sign}</h1>
-          <h4>{this.state.dateRange}</h4>
-          <h5>Horoscope for {this.state.currentDate}</h5>
+          <h3>{this.state.day} - {this.state.currentDate}</h3>
           <p>{this.state.description}</p>
-          <span className='threeButtons'>
-            <button onClick={() => this.clickYesterday()}>Yesterday</button>
-            <button onClick={() => this.clickToday()}>Today</button>
-            <button onClick={() => this.clickTmrw()}>Tomorrow</button>
-          </span>
         </div>
-        <Link to='/' style={{ textDecoration: 'none', color: 'purple' }}>
-          <h3>Home</h3>
+        <span className='threeButtons'>
+          <button onClick={() => this.clickYesterday()}>Yesterday</button>
+          <button onClick={() => this.clickToday()}>Today</button>
+          <button onClick={() => this.clickTmrw()}>Tomorrow</button>
+        </span>
+        <Link to='/' style={{ textDecoration: 'none', color: 'purple', gridRowStart: '4', gridColumnStart: '7', alignSelf: 'center' }}>
+          <h3 style={{ border: 'solid 1px purple', padding: '10px', textAlign: 'center' }}>Pick another sign</h3>
         </Link>
       </div >
 

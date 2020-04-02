@@ -1,20 +1,38 @@
 .scopeAndFacts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10% 40% 20% 20% 10%;
   grid-gap: 10px;
 }
-
+h1 {
+  grid-column-start: 2;
+  /* text-align: center; */
+  align-self: center;
+}
+h4 {
+  align-self: center;
+  font-style: italic;
+}
 button {
-  color: green;
+  color: white;
+  background-color: purple;
   padding: 5px;
   margin: 10px;
+  border-radius: 10px;
 }
 .threeScopes {
   background-color: lightsteelblue;
   grid-column-start:4;
   grid-column-end: 8;
-  /* width: 50%; */
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 .threeButtons {
   background-color: red;
+  grid-row: 2 / span 1;
+  grid-column: 6 / span 2;
+  justify-self: end;
+  align-self: end;
 }
+
+

@@ -5,6 +5,7 @@ header {
   flex-direction: row;
   align-items: center;
   font-family: 'Acme', sans-serif;
+  color: purple;
 }
 
 /* header nav {
