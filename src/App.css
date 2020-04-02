@@ -7,11 +7,11 @@ header {
   font-family: 'Acme', sans-serif;
 }
 
-header nav {
+/* header nav {
   display: flex;
   align-self: center;
   padding-right: 100px;
-}
+} */
 
 main {
   padding: 30px;
@@ -27,9 +27,3 @@ footer {
   justify-content: center;
   color: purple;
 }
-
-/* .scopeAndFacts {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  padding: 30px;
-} */

@@ -60,14 +60,15 @@ class ThreeDayScope extends Component {
           <h4>{this.state.dateRange}</h4>
           <h5>Horoscope for {this.state.currentDate}</h5>
           <p>{this.state.description}</p>
-          <button onClick={() => this.clickYesterday()}>Yesterday</button>
-          <button onClick={() => this.clickToday()}>Today</button>
-          <button onClick={() => this.clickTmrw()}>Tomorrow</button>
-          <br />
-          <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
-            <h3>Home</h3>
-          </Link>
+          <span className='threeButtons'>
+            <button onClick={() => this.clickYesterday()}>Yesterday</button>
+            <button onClick={() => this.clickToday()}>Today</button>
+            <button onClick={() => this.clickTmrw()}>Tomorrow</button>
+          </span>
         </div>
+        <Link to='/' style={{ textDecoration: 'none', color: 'purple' }}>
+          <h3>Home</h3>
+        </Link>
       </div >
 
 

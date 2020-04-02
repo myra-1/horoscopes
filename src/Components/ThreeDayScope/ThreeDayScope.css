@@ -1,5 +1,20 @@
 .scopeAndFacts {
   display: grid;
-  grid-template-columns: 30% 70%;
-  padding: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+button {
+  color: green;
+  padding: 5px;
+  margin: 10px;
+}
+.threeScopes {
+  background-color: lightsteelblue;
+  grid-column-start:4;
+  grid-column-end: 8;
+  /* width: 50%; */
+}
+.threeButtons {
+  background-color: red;
 }
