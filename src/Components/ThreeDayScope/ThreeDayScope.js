@@ -36,6 +36,7 @@ class ThreeDayScope extends Component {
     const signId = this.props.match.params.signId
 
     const response = await axios.post(`https://aztro.sameerkumar.website/?sign=${signId}&day=${this.state.day}`)
+    console.log(response)
 
     this.setState({
       dateRange: response.data['date_range'],

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 
 import './App.css';
-import signInfo from '/Users/myra/supernovas/unit-2/project/project2/src/data/horoscope2.json'
+import signInfo from '/Users/myra/supernovas/unit-2/project/project2/src/horoscope2.json'
 
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 
 import Signs from './Components/Zodiac/Signs'
-import Sign from './Components/Zodiac/Sign'
 import ThreeDayScope from './Components/ThreeDayScope/ThreeDayScope'
 
 class App extends Component {

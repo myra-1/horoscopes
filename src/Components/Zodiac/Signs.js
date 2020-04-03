@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import signInfo from '/Users/myra/supernovas/unit-2/project/project2/src/data/horoscope2.json'
+import signInfo from '/Users/myra/supernovas/unit-2/project/project2/src/horoscope2.json'
 import Sign from './Sign'
 import './Signs.css'
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class Signs extends Component {
   constructor() {
