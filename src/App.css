@@ -1,16 +1,4 @@
-header {
-  /* border-bottom: 1px dotted lightgray; */
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  font-family: 'Acme', sans-serif;
-  color: #C4DDE9;
-}
 html{
-  /* background-image: url('https://i.pinimg.com/originals/e5/71/e1/e571e1ff3bc59ca61583480242a2aaa0.gif') */
-/* background-image: url('https://media.giphy.com/media/3ohhwNqFMnb7wZgNnq/giphy.gif'); */
-/* background-image: url('https://avatars.mds.yandex.net/get-pdb/1366512/21452513-c92b-49ad-af6e-ba55bec0fba4/orig'); */
 background-image: url('https://cdn.lowgif.com/full/7951af76d6523f22-shooting-stars-gifs-google-search-web-design-pinterest.gif');
 }
 
@@ -19,21 +7,9 @@ main {
   margin: 10px;
   min-height: 500px;
   font-family: 'Acme', sans-serif;
-  /* border: 1px dotted #C4DDE9; */
-}
-
-footer {
-  /* border-top: 1px dotted lightgray; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #C4DDE9;
 }
 
 @media only screen and (max-width: 415px){
-  header, footer {
-    height: 75px;
-  }
   html{
     background-image: url('https://cdn.lowgif.com/full/7951af76d6523f22-shooting-stars-gifs-google-search-web-design-pinterest.gif');
     background-size: cover;
@@ -41,9 +17,6 @@ footer {
 }
 
 @media only screen and (max-width: 800px) and (min-width: 416px){
-  header, footer {
-    height: 100px;
-  }
   main {
     min-height: 750px;
   }

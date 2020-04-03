@@ -1,0 +1,17 @@
+header {
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  color: #C4DDE9;
+}
+
+@media only screen and (max-width: 415px){
+  header {
+    padding-top:15px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 416px){
+  header{
+    height: 100px;
+  }
+}

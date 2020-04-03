@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Header from './Header'
-import '../../App.css'
+import './Header.css'
 
 storiesOf('Header', module)
   .add('Header', () => (

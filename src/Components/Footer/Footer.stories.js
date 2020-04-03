@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Footer from './Footer'
-import '../../App.css'
+import './Footer.css'
 
 storiesOf('Footer', module)
   .add('Footer', () => (

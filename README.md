@@ -3,7 +3,9 @@ My Daily Horoscope
 
 Fun site that allows users to select an astro sign to get yesterday's, today's and tomorrow's horoscope and sign info (Lucky Number, Lucky Color, Mood, Color, Compatibility).
 
-Many thanks to https://github.com/sameerkumar18/aztro for the free API!
+Data and Images provided via:
+- https://github.com/sameerkumar18/aztro free API 
+- http://newsmobile.in/json-horoscope/ images
 
 Desktop:
 ![Imgur](https://imgur.com/TtYrzjl.png)
@@ -14,11 +16,12 @@ Mobile & Tablet:
 
 Component Heirarchy
 - Home (App)
+- Header (Function)
+- Footer (Function)
 - Signs (Class, maps through json data)
   - Sign (individual sign images and titles)
-- Daily Horoscope (class w/ API call)
-  - Sun Facts (functional)
-- Loading page (in case of API slowness)
+- Daily Horoscope (Class w/ API call)
+  - Sun Facts (Function)
 
 MVP: The minimum, need-to-have features
 - Option to select astrological sign on the home page
@@ -30,6 +33,7 @@ Post-MVP
   - "Compatability: Cancer" is clickable to the Cancer daily horoscope page
   - Make background color of (or add a swatch of color to) individual horoscope page to match the sign info "Color"
   - Add countdown to sign-info "Lucky Time" (else: "already passed")
+  - Loading page (in case of API slowness)
 
 SWOT Analysis: Strengths, Weaknesses, Opportunities, and Threats
 

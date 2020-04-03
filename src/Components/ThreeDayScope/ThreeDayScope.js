@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import SunFacts from '../SunFacts/SunFacts'
 import { Link } from 'react-router-dom'
+import './ThreeDayScope.css'
 
 class ThreeDayScope extends Component {
   constructor(props) {
@@ -36,7 +37,6 @@ class ThreeDayScope extends Component {
     const signId = this.props.match.params.signId
 
     const response = await axios.post(`https://aztro.sameerkumar.website/?sign=${signId}&day=${this.state.day}`)
-    console.log(response)
 
     this.setState({
       dateRange: response.data['date_range'],
@@ -56,7 +56,7 @@ class ThreeDayScope extends Component {
     return (
       <div className="scopeAndFacts">
         <h1>{this.state.sign}</h1>
-        <h4>({this.state.dateRange})</h4>
+        <h4 id='dateRange'>({this.state.dateRange})</h4>
         <div className='threeScopes'>
           <h3>{this.state.day} - {this.state.currentDate}</h3>
           <p>{this.state.description}</p>

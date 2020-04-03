@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  justify-content: center;
+  color: #C4DDE9;
+}
+
+@media only screen and (max-width: 415px){
+  footer {
+    height: 75px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 416px){
+  footer {
+    height: 100px;
+  }
+}
