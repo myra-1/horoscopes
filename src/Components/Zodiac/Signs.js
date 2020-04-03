@@ -31,8 +31,3 @@ class Signs extends Component {
 }
 
 export default Signs
-
-
-//horsoscope2 json cred:
-// BEAUTIFUL DATA BROUGHT TO YOU BY:
-// http://newsmobile.in/json-horoscope/
