@@ -25,7 +25,7 @@
 .zodiacMap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr ;
-  grid-gap: 10px;
+  grid-gap: 60px;
 }
 @media only screen and (max-width: 415px){
   .zodiacMap {
