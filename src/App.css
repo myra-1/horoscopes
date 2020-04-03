@@ -7,6 +7,12 @@ header {
   font-family: 'Acme', sans-serif;
   color: purple;
 }
+html{
+  background-image: url('https://i.pinimg.com/originals/e5/71/e1/e571e1ff3bc59ca61583480242a2aaa0.gif')
+/* background-image: url("https://media.giphy.com/media/heOKY8nrJUMfK/source.gif"); */
+/* background-repeat: no-repeat;
+background-size: contain; */
+}
 
 main {
   padding: 30px;
