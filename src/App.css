@@ -24,15 +24,16 @@ footer {
 }
 
 @media only screen and (max-width: 415px){
-  /* main {
-    display: unset;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
-
+  header, footer {
+    height: 75px;
+  }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 416px){
-
+  header, footer {
+    height: 100px;
+  }
+  main {
+    min-height: 750px;
+  }
 }
