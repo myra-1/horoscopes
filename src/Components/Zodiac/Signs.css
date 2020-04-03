@@ -30,9 +30,42 @@
 @media only screen and (max-width: 415px){
   .zodiacMap {
     display: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .zodiacImg{
+    padding: 5px;
+    margin: 5px;
   }
   .zodiacTitle {
-    display: unset;
+    opacity: 1;
+    position: unset;
+    position: relative;
+    color: black;
+    padding: 2px 0 10px 0;
   }
+}
 
+@media only screen and (max-width: 800px) and (min-width: 416px){
+  .zodiacMap {
+    display: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  .zodiacImg{
+    padding: 5px;
+    margin: 15px;
+  }
+  .zodiacTitle {
+    opacity: 1;
+    position: unset;
+    position: relative;
+    color: black;
+    padding: 2px 0 10px 0;
+  }
 }
