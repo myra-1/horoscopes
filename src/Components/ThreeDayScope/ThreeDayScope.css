@@ -35,4 +35,41 @@ button {
   align-self: end;
 }
 
+@media only screen and (max-width: 415px){
+  .scopeAndFacts {
+    display: unset;
+    text-align:justify;
+  }
+  .threeButtons {
+    display: flex;
+    justify-content: center;
+  }
+  h1{
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+  }
+  .threeScopes h3 {
+  margin-bottom: 0;
+ }
+ p{
+   margin-top: 7px;
+ }
+}
 
+@media only screen and (max-width: 800px) and (min-width: 416px){
+  .scopeAndFacts {
+    display: unset;
+  }
+   .threeButtons {
+    display: flex;
+    justify-content: flex-end; 
+  } 
+  h1{
+    margin-bottom: 0;
+  }
+  h4 {
+    margin: 0;
+  }
+}

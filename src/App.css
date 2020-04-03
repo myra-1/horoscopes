@@ -8,12 +8,6 @@ header {
   color: purple;
 }
 
-/* header nav {
-  display: flex;
-  align-self: center;
-  padding-right: 100px;
-} */
-
 main {
   padding: 30px;
   margin: 10px;
@@ -27,4 +21,18 @@ footer {
   align-items: center;
   justify-content: center;
   color: purple;
+}
+
+@media only screen and (max-width: 415px){
+  /* main {
+    display: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
+
+}
+
+@media only screen and (max-width: 800px) and (min-width: 416px){
+
 }

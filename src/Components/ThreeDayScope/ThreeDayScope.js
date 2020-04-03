@@ -56,11 +56,11 @@ class ThreeDayScope extends Component {
       <div className="scopeAndFacts">
         <h1>{this.state.sign}</h1>
         <h4>({this.state.dateRange})</h4>
-        <SunFacts {...this.state} />
         <div className='threeScopes'>
           <h3>{this.state.day} - {this.state.currentDate}</h3>
           <p>{this.state.description}</p>
         </div>
+        <SunFacts {...this.state} />
         <span className='threeButtons'>
           <button onClick={() => this.clickYesterday()}>Yesterday</button>
           <button onClick={() => this.clickToday()}>Today</button>
