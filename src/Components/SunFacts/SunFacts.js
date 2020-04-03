@@ -1,6 +1,6 @@
 import React from 'react'
 import './SunFacts.css'
-import '/Users/myra/supernovas/unit-2/project/project2/src/Components/ThreeDayScope/ThreeDayScope.css'
+import '../ThreeDayScope/ThreeDayScope.css'
 
 const SunFacts = (props) => {
   return (
