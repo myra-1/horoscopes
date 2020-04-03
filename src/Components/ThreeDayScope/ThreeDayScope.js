@@ -66,8 +66,8 @@ class ThreeDayScope extends Component {
           <button onClick={() => this.clickToday()}>Today</button>
           <button onClick={() => this.clickTmrw()}>Tomorrow</button>
         </span>
-        <Link to='/' style={{ textDecoration: 'none', color: 'purple', gridRowStart: '4', gridColumnStart: '7', alignSelf: 'center' }}>
-          <h3 style={{ border: 'solid 1px purple', padding: '10px', textAlign: 'center' }}>Pick another sign</h3>
+        <Link to='/' style={{ textDecoration: 'none', color: '#C4DDE9', gridRowStart: '4', gridColumnStart: '7', alignSelf: 'center' }}>
+          <h3 style={{ border: 'solid 1px #C4DDE9', padding: '10px', textAlign: 'center' }}>Pick another sign</h3>
         </Link>
       </div >
 

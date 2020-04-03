@@ -1,11 +1,11 @@
 header {
-  border-bottom: 1px dotted lightgray;
+  /* border-bottom: 1px dotted lightgray; */
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   font-family: 'Acme', sans-serif;
-  color: purple;
+  color: #C4DDE9;
 }
 html{
   /* background-image: url('https://i.pinimg.com/originals/e5/71/e1/e571e1ff3bc59ca61583480242a2aaa0.gif') */
@@ -19,14 +19,15 @@ main {
   margin: 10px;
   min-height: 500px;
   font-family: 'Acme', sans-serif;
+  /* border: 1px dotted #C4DDE9; */
 }
 
 footer {
-  border-top: 1px dotted lightgray;
+  /* border-top: 1px dotted lightgray; */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: purple;
+  color: #C4DDE9;
 }
 
 @media only screen and (max-width: 415px){

@@ -8,27 +8,28 @@ h1 {
   grid-column-start: 2;
   /* text-align: center; */
   align-self: center;
+  color: #C4DDE9;
 }
-h4 {
+.scopeAndFacts h4 {
   align-self: center;
   font-style: italic;
+  color: #C4DDE9;
 }
 button {
-  color: white;
-  background-color: purple;
-  padding: 5px;
+  color: orange;
+  padding: 7px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: transparent;
 }
 .threeScopes {
-  background-color: lightsteelblue;
+  color: #C4DDE9;
   grid-column-start:4;
   grid-column-end: 8;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 .threeButtons {
-  background-color: red;
   grid-row: 2 / span 1;
   grid-column: 6 / span 2;
   justify-self: end;
