@@ -1,5 +1,4 @@
 import React from 'react'
-import Sign from '../Zodiac/Sign'
 import './SunFacts.css'
 import '/Users/myra/supernovas/unit-2/project/project2/src/Components/ThreeDayScope/ThreeDayScope.css'
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 
 import './App.css';
-import signInfo from './horoscope2.json'
+import signInfo from './data/horoscope2.json'
 
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
@@ -34,12 +34,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
-// https://github.com/sameerkumar18/aztro
-
-//horsoscope2 json cred:
-// BEAUTIFUL DATA BROUGHT TO YOU BY:
-// http://newsmobile.in/json-horoscope/  
